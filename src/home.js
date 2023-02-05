@@ -1,7 +1,9 @@
+import homeImage from './images/madie-hamilton-dZ-HI4EuWcA-unsplash.jpg'
 
 function createHome() {
   const homeDiv = document.createElement("div");
-  homeDiv.textContent = "1987 is a new eating experience.";
+  homeDiv.id = "homeDiv";
+  homeDiv.innerHTML = "<img src=" + homeImage + " class='topImg'></img>"
 
   return homeDiv;
 }

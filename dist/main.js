@@ -16,7 +16,7 @@
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n\nfunction createHome() {\n  const homeDiv = document.createElement(\"div\");\n  homeDiv.textContent = \"1987 is a new eating experience.\";\n\n  return homeDiv;\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createHome);\n\n\n//# sourceURL=webpack://restaurant/./src/home.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _images_madie_hamilton_dZ_HI4EuWcA_unsplash_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images/madie-hamilton-dZ-HI4EuWcA-unsplash.jpg */ \"./src/images/madie-hamilton-dZ-HI4EuWcA-unsplash.jpg\");\n\n\nfunction createHome() {\n  const homeDiv = document.createElement(\"div\");\n  homeDiv.id = \"homeDiv\";\n  homeDiv.innerHTML = \"<img src=\" + _images_madie_hamilton_dZ_HI4EuWcA_unsplash_jpg__WEBPACK_IMPORTED_MODULE_0__ + \" class='topImg'></img>\"\n\n  return homeDiv;\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createHome);\n\n\n//# sourceURL=webpack://restaurant/./src/home.js?");
 
 /***/ }),
 
@@ -37,6 +37,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n/* harmony import */ var iconify_icon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! iconify-icon */ \"./node_modules/iconify-icon/dist/iconify-icon.mjs\");\n\n\n\n\nconst contentDiv = document.createElement(\"div\");\ncontentDiv.id = \"content\";\n\nconst navItemTitles = [\"Home\", \"Menu\", \"About\", \"Booking\"];\n\nfunction header() {\n  const headerDiv = document.createElement(\"div\");\n  headerDiv.id = \"header\";\n\n  const logo = document.createElement(\"div\");\n  logo.id = \"logo\";\n  logo.textContent = \"1987\";\n  headerDiv.appendChild(logo);\n\n  const navBar = document.createElement(\"div\");\n  navBar.id = \"navBar\";\n  for (const item of navItemTitles) {\n    const navItem = document.createElement(\"div\");\n    navItem.id = \"nav\" + item;\n    navItem.textContent = item;\n    navItem.classList.add(\"navItem\");\n    if (item === \"Home\") {\n      navItem.classList.add(\"activated\");\n    }\n    navItem.addEventListener(\"click\", navigate);\n\n    navBar.appendChild(navItem);\n  }\n  headerDiv.appendChild(navBar);\n\n  document.body.appendChild(headerDiv);\n}\n\nfunction footer() {\n  const footerDiv = document.createElement(\"div\");\n  footerDiv.id = \"footer\";\n  footerDiv.innerHTML = '<div>© Rob Carruthers 2023 <a href=\"https://github.com/rob-carruthers/restaurant\" target=\"_blank\"><iconify-icon icon=\"mdi:github\" style=\"color: black;\"></iconify-icon></a></div>'\n\n  return footerDiv;\n}\n\nfunction navigate(event) {\n  const navTarget = event.target.id.slice(3);\n  const navItems = document.getElementsByClassName(\"navItem\");\n\n  Array.from(navItems).forEach((item) => item.classList.remove(\"activated\"));\n  event.target.classList.add(\"activated\");\n\n  contentDiv.textContent = \"\";\n  let content = [];\n\n  switch (navTarget) {\n    case \"Home\":\n      contentDiv.appendChild((0,_home__WEBPACK_IMPORTED_MODULE_0__[\"default\"])());\n      break;\n    case \"Menu\":\n      contentDiv.appendChild((0,_menu__WEBPACK_IMPORTED_MODULE_1__[\"default\"])());\n      break;\n  }\n  contentDiv.appendChild(footer());\n}\n\nheader();\ndocument.body.appendChild(contentDiv);\ncontentDiv.appendChild((0,_home__WEBPACK_IMPORTED_MODULE_0__[\"default\"])());\ncontentDiv.appendChild(footer());\n\n\n//# sourceURL=webpack://restaurant/./src/site.js?");
+
+/***/ }),
+
+/***/ "./src/images/madie-hamilton-dZ-HI4EuWcA-unsplash.jpg":
+/*!************************************************************!*\
+  !*** ./src/images/madie-hamilton-dZ-HI4EuWcA-unsplash.jpg ***!
+  \************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"images/madie-hamilton-dZ-HI4EuWcA-unsplash..jpg\";\n\n//# sourceURL=webpack://restaurant/./src/images/madie-hamilton-dZ-HI4EuWcA-unsplash.jpg?");
 
 /***/ }),
 
@@ -89,6 +99,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -103,6 +125,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /************************************************************************/
