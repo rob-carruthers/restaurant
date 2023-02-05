@@ -16,7 +16,7 @@
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction createHome() {\n    const title = document.createElement(\"div\");\n    title.textContent = \"1987\";\n\n    return title;\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createHome);\n\n//# sourceURL=webpack://restaurant/./src/home.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction createHome() {\n  const title = document.createElement(\"div\");\n  title.textContent = \"1987\";\n\n  return title;\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createHome);\n\n\n//# sourceURL=webpack://restaurant/./src/home.js?");
 
 /***/ }),
 
@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n\n\nconst contentDiv = document.getElementById(\"content\");\ncontentDiv.appendChild((0,_home__WEBPACK_IMPORTED_MODULE_0__[\"default\"])());\n\n//# sourceURL=webpack://restaurant/./src/site.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n\n\nconst contentDiv = document.getElementById(\"content\");\nconst navItems = [\"Home\", \"Menu\", \"About\", \"Booking\"];\nlet activatedItem = 0;\n\nfunction header() {\n  const headerDiv = document.createElement(\"div\");\n  headerDiv.id = \"header\";\n\n  const logo = document.createElement(\"div\");\n  logo.id = \"logo\";\n  logo.textContent = \"1987\";\n  logo.classList.add(\"navItem\");\n  headerDiv.appendChild(logo);\n\n  const navBar = document.createElement(\"div\");\n  navBar.id = \"navBar\";\n  for (const item of navItems) {\n    const navItem = document.createElement(\"div\");\n    navItem.id = \"nav\" + item;\n    navItem.textContent = item;\n    navItem.classList.add(\"navItem\");\n    if (item === navItems[activatedItem]) {\n        navItem.classList.add(\"activated\");\n    }\n    navBar.appendChild(navItem);\n  }\n  headerDiv.appendChild(navBar);\n\n  return headerDiv;\n}\n\ncontentDiv.appendChild(header());\n\n\n//# sourceURL=webpack://restaurant/./src/site.js?");
 
 /***/ })
 

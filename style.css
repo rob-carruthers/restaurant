@@ -1,3 +1,26 @@
 body {
     background-color: rgb(253, 223, 228);
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    background-color: rgba(128, 128, 128, 0.394);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#navBar {
+    display: flex;
+    padding-right: 20px;
+}
+
+.navItem {
+    padding: 15px;
+}
+
+.navItem.activated {
+    background-color: rgba(240, 248, 255, 0.541);
+    border-radius: 6px;
 }
