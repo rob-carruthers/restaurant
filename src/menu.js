@@ -1,3 +1,5 @@
+import menuImage from "./images/jeff-siepman-ADjTOgfnmrU-unsplash.jpg"
+
 const menuItems = [
   {
     name: "Olive & Anchovy Tapenade",
@@ -71,12 +73,19 @@ function createMenu() {
   title.textContent = "Tasting Menu";
   title.classList.add("title");
 
+  const topImg = document.createElement("img");
+  topImg.classList.add("topImg");
+  topImg.src = menuImage;
+  topImg.style.objectFit = "cover";
+  topImg.style.height = "400px";
+
   const subHeader = document.createElement("div");
   subHeader.classList.add("subHeader");
   subHeader.textContent =
     "Our tasting menu is served both à la carte and as a set to share (recommended).";
 
   menuDiv.appendChild(title);
+  menuDiv.appendChild(topImg);
   menuDiv.appendChild(subHeader);
 
   for (const item of menuItems) {
