@@ -4,6 +4,14 @@ body {
     padding: 0;
 }
 
+hr {
+    height: 2px;
+    color: black;
+    background-color: black;
+    border: none;
+    width: 80%;
+}
+
 #header {
     background-color: rgba(128, 128, 128, 0.394);
     display: flex;
@@ -30,4 +38,45 @@ body {
 .navItem.activated {
     background-color: rgba(240, 248, 255, 0.541);
     border-radius: 6px;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+}
+
+#menuDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    overflow: scroll;
+}
+
+#menuList {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.menuItem {
+    width: min(400px, 70vw);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menuItemHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.menuItemDescription {
+    text-align: justify;
+}
+
+.title {
+    font-size: 3em;
 }
