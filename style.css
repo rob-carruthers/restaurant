@@ -89,7 +89,11 @@ hr {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    width: min(400px, 70vw);
+    width: min(430px, 70vw);
+    background-color: rgb(248, 245, 242);
+    padding: 15px;
+    box-shadow: 1px 1px 1px gray;
+    border-radius: 4px;
 }
 
 .menuItem {
