@@ -3,8 +3,7 @@ import createHome from "./home";
 const contentDiv = document.createElement("div");
 contentDiv.id = "content";
 
-const navItems = ["Home", "Menu", "About", "Booking"];
-let activatedItem = 0;
+const navItemTitles = ["Home", "Menu", "About", "Booking"];
 
 function header() {
   const headerDiv = document.createElement("div");
@@ -13,19 +12,20 @@ function header() {
   const logo = document.createElement("div");
   logo.id = "logo";
   logo.textContent = "1987";
-  logo.classList.add("navItem");
   headerDiv.appendChild(logo);
 
   const navBar = document.createElement("div");
   navBar.id = "navBar";
-  for (const item of navItems) {
+  for (const item of navItemTitles) {
     const navItem = document.createElement("div");
     navItem.id = "nav" + item;
     navItem.textContent = item;
     navItem.classList.add("navItem");
-    if (item === navItems[activatedItem]) {
-        navItem.classList.add("activated");
+    if (item === "Home") {
+      navItem.classList.add("activated");
     }
+    navItem.addEventListener("click", navigate);
+
     navBar.appendChild(navItem);
   }
   headerDiv.appendChild(navBar);
@@ -33,6 +33,21 @@ function header() {
   document.body.appendChild(headerDiv);
 }
 
+function navigate(event) {
+  const navTarget = event.target.id.slice(3);
+  const navItems = document.getElementsByClassName("navItem");
+
+  Array.from(navItems).forEach((item) => item.classList.remove("activated"));
+  event.target.classList.add("activated");
+
+  contentDiv.textContent = "";
+
+  switch(navTarget) {
+    case "Home":
+      contentDiv.appendChild(createHome());
+  }
+}
+
 header();
 document.body.appendChild(contentDiv);
-
+contentDiv.appendChild(createHome())

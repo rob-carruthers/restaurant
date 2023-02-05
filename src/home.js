@@ -1,8 +1,8 @@
 function createHome() {
-  const title = document.createElement("div");
-  title.textContent = "1987";
+  const homeDiv = document.createElement("div");
+  homeDiv.textContent = "1987 is a new eating experience.";
 
-  return title;
+  return homeDiv;
 }
 
 export default createHome;
