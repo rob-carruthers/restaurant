@@ -1,5 +1,6 @@
 import createHome from "./home";
 import createMenu from "./menu";
+import 'iconify-icon';
 
 const contentDiv = document.createElement("div");
 contentDiv.id = "content";
@@ -34,6 +35,14 @@ function header() {
   document.body.appendChild(headerDiv);
 }
 
+function footer() {
+  const footerDiv = document.createElement("div");
+  footerDiv.id = "footer";
+  footerDiv.innerHTML = '<div>© Rob Carruthers 2023 <a href="https://github.com/rob-carruthers/restaurant" target="_blank"><iconify-icon icon="mdi:github" style="color: black;"></iconify-icon></a></div>'
+
+  return footerDiv;
+}
+
 function navigate(event) {
   const navTarget = event.target.id.slice(3);
   const navItems = document.getElementsByClassName("navItem");
@@ -52,8 +61,10 @@ function navigate(event) {
       contentDiv.appendChild(createMenu());
       break;
   }
+  contentDiv.appendChild(footer());
 }
 
 header();
 document.body.appendChild(contentDiv);
 contentDiv.appendChild(createHome());
+contentDiv.appendChild(footer());
