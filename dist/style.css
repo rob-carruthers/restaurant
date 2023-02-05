@@ -62,6 +62,8 @@ hr {
 
 .topImg {
     width: 50%;
+    box-shadow: 2px 2px 2px black;
+    border-radius: 8px;
 }
 
 #footer {
