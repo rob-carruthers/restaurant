@@ -1,6 +1,8 @@
 import createHome from "./home";
 
-const contentDiv = document.getElementById("content");
+const contentDiv = document.createElement("div");
+contentDiv.id = "content";
+
 const navItems = ["Home", "Menu", "About", "Booking"];
 let activatedItem = 0;
 
@@ -28,7 +30,9 @@ function header() {
   }
   headerDiv.appendChild(navBar);
 
-  return headerDiv;
+  document.body.appendChild(headerDiv);
 }
 
-contentDiv.appendChild(header());
+header();
+document.body.appendChild(contentDiv);
+
