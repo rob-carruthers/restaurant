@@ -1,4 +1,5 @@
 import createHome from "./home";
+import createMenu from "./menu";
 
 const contentDiv = document.createElement("div");
 contentDiv.id = "content";
@@ -41,13 +42,18 @@ function navigate(event) {
   event.target.classList.add("activated");
 
   contentDiv.textContent = "";
+  let content = [];
 
-  switch(navTarget) {
+  switch (navTarget) {
     case "Home":
       contentDiv.appendChild(createHome());
+      break;
+    case "Menu":
+      contentDiv.appendChild(createMenu());
+      break;
   }
 }
 
 header();
 document.body.appendChild(contentDiv);
-contentDiv.appendChild(createHome())
+contentDiv.appendChild(createHome());
