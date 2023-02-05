@@ -12,7 +12,7 @@ function header() {
   headerDiv.id = "header";
 
   const logo = document.createElement("div");
-  logo.id = "logo";
+  logo.classList.add("logo");
   logo.textContent = "1987";
   headerDiv.appendChild(logo);
 
