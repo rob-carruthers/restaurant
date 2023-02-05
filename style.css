@@ -14,11 +14,13 @@ hr {
 }
 
 #header {
-    background-color: rgba(128, 128, 128, 0.394);
+    background-color: rgba(168, 168, 168, 0.8);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    position: fixed;
+    width: 100%;
 }
 
 #navBar {
@@ -49,6 +51,7 @@ hr {
 #content {
     display: flex;
     justify-content: center;
+    padding-top: 80px;
 }
 
 #menuDiv {
