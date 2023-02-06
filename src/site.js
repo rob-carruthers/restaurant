@@ -43,14 +43,20 @@ function footer() {
   return footerDiv;
 }
 
-function navigate(event) {
+async function navigate(event) {
   const navTarget = event.target.id.slice(3);
   const navItems = document.getElementsByClassName("navItem");
 
   Array.from(navItems).forEach((item) => item.classList.remove("activated"));
   event.target.classList.add("activated");
 
+  contentDiv.classList.remove("fadeInEffect");
+  contentDiv.classList.add("fadeOutEffect");
+  // wait 0.5s for the first animation to clear
+  await new Promise(r => setTimeout(r, 500));
   contentDiv.textContent = "";
+  contentDiv.classList.remove("fadeOutEffect");
+  contentDiv.classList.add("fadeInEffect");
   let content = [];
 
   switch (navTarget) {
@@ -65,6 +71,7 @@ function navigate(event) {
 }
 
 header();
+contentDiv.classList.add("fadeInEffect");
 document.body.appendChild(contentDiv);
 contentDiv.appendChild(createHome());
 contentDiv.appendChild(footer());
