@@ -54,7 +54,7 @@ async function navigate(event) {
   contentDiv.classList.remove("fadeInEffect");
   contentDiv.classList.add("fadeOutEffect");
   // wait 0.5s for the first animation to clear
-  await new Promise(r => setTimeout(r, 500));
+  await new Promise(r => setTimeout(r, 400));
   contentDiv.textContent = "";
   contentDiv.classList.remove("fadeOutEffect");
   contentDiv.classList.add("fadeInEffect");

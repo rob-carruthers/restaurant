@@ -65,11 +65,11 @@ hr {
 }
 
 .fadeInEffect {
-    animation: fadeIn 0.9s;
+    animation: fadeIn 0.4s;
 }
 
 .fadeOutEffect {
-    animation: fadeOut 0.5s;
+    animation: fadeOut 0.4s;
 }
 
 @keyframes fadeIn {
