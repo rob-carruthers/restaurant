@@ -1,5 +1,6 @@
 import createHome from "./home";
 import createMenu from "./menu";
+import createAbout from "./about";
 import 'iconify-icon';
 
 const contentDiv = document.createElement("div");
@@ -65,6 +66,9 @@ async function navigate(event) {
       break;
     case "Menu":
       contentDiv.appendChild(createMenu());
+      break;
+    case "About":
+      contentDiv.appendChild(createAbout());
       break;
   }
   contentDiv.appendChild(footer());

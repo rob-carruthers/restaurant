@@ -77,7 +77,7 @@ function createMenu() {
   topImg.classList.add("topImg");
   topImg.src = menuImage;
   topImg.style.objectFit = "cover";
-  topImg.style.height = "400px";
+  topImg.style.height = "350px";
 
   const subHeader = document.createElement("div");
   subHeader.classList.add("subHeader");

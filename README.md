@@ -5,6 +5,10 @@ The Odin Project's 'Restaurant' project
 Madie Hamilton  
 https://unsplash.com/photos/dZ-HI4EuWcA  
   
-Jeff Siepman
-https://unsplash.com/photos/ADjTOgfnmrU
+Jeff Siepman  
+https://unsplash.com/photos/ADjTOgfnmrU  
+  
+Jason Leung  
+https://unsplash.com/photos/-eKZLpj7U0E  
+
 
