@@ -23,6 +23,7 @@ hr {
     padding: 10px;
     position: fixed;
     width: 100vw;
+    z-index: 999;
 }
 
 #navBar {
