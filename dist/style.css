@@ -43,10 +43,12 @@ hr {
     padding: 15px;
     cursor: pointer;
     user-select: none;
+    transition: background-color 100ms linear;
 }
 
 .navItem.activated {
     background-color: rgba(240, 248, 255, 0.541);
+    transition: background-color 100ms linear;
     border-radius: 6px;
 }
 
