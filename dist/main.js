@@ -56,7 +56,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hom
   \*********************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/jason-leung--eKZLpj7U0E-unsplash..jpg\";\n\n//# sourceURL=webpack://restaurant/./src/images/jason-leung--eKZLpj7U0E-unsplash.jpg?");
+eval("module.exports = __webpack_require__.p + \"images/jason-leung--eKZLpj7U0E-unsplash.jpg\";\n\n//# sourceURL=webpack://restaurant/./src/images/jason-leung--eKZLpj7U0E-unsplash.jpg?");
 
 /***/ }),
 
@@ -66,7 +66,7 @@ eval("module.exports = __webpack_require__.p + \"images/jason-leung--eKZLpj7U0E-
   \**********************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/jeff-siepman-ADjTOgfnmrU-unsplash..jpg\";\n\n//# sourceURL=webpack://restaurant/./src/images/jeff-siepman-ADjTOgfnmrU-unsplash.jpg?");
+eval("module.exports = __webpack_require__.p + \"images/jeff-siepman-ADjTOgfnmrU-unsplash.jpg\";\n\n//# sourceURL=webpack://restaurant/./src/images/jeff-siepman-ADjTOgfnmrU-unsplash.jpg?");
 
 /***/ }),
 
@@ -76,7 +76,7 @@ eval("module.exports = __webpack_require__.p + \"images/jeff-siepman-ADjTOgfnmrU
   \************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"images/madie-hamilton-dZ-HI4EuWcA-unsplash..jpg\";\n\n//# sourceURL=webpack://restaurant/./src/images/madie-hamilton-dZ-HI4EuWcA-unsplash.jpg?");
+eval("module.exports = __webpack_require__.p + \"images/madie-hamilton-dZ-HI4EuWcA-unsplash.jpg\";\n\n//# sourceURL=webpack://restaurant/./src/images/madie-hamilton-dZ-HI4EuWcA-unsplash.jpg?");
 
 /***/ }),
 
