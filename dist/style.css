@@ -29,6 +29,7 @@ hr {
 #navBar {
     display: flex;
     padding-right: 20px;
+    gap: 4px;
 }
 
 .logo {
@@ -45,12 +46,15 @@ hr {
     cursor: pointer;
     user-select: none;
     transition: background-color 100ms linear;
+    border-radius: 6px;
+}
+
+.navItem:hover {
+    background-color: rgba(240, 248, 255, 0.3);
 }
 
 .navItem.activated {
     background-color: rgba(240, 248, 255, 0.541);
-    transition: background-color 100ms linear;
-    border-radius: 6px;
 }
 
 #content {
