@@ -6,7 +6,7 @@ import 'iconify-icon';
 const contentDiv = document.createElement("div");
 contentDiv.id = "content";
 
-const navItemTitles = ["Home", "Menu", "About", "Booking"];
+const navItemTitles = ["Home", "Menu", "About"];
 
 function header() {
   const headerDiv = document.createElement("div");
