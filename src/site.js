@@ -54,11 +54,11 @@ async function navigate(event) {
   contentDiv.classList.remove("fadeInEffect");
   contentDiv.classList.add("fadeOutEffect");
   // wait 0.5s for the first animation to clear
-  await new Promise(r => setTimeout(r, 400));
-  contentDiv.textContent = "";
+  await new Promise(r => setTimeout(r, 375));
   contentDiv.classList.remove("fadeOutEffect");
   contentDiv.classList.add("fadeInEffect");
-  let content = [];
+  contentDiv.textContent = "";
+  contentDiv.scroll(0, 0);
 
   switch (navTarget) {
     case "Home":
